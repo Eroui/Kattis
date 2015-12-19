@@ -1,6 +1,8 @@
 # Kattis
 My solutions to Kattis problems I have solved.
 
+http://open.kattis.com/users/terrence-park
+
 #Solved Problems
 
 2048 (TwentyFortyEight)
