@@ -42,6 +42,7 @@ http://open.kattis.com/users/terrence-park
 - FlowLayout
 - Friday
 - FunctionalFun
+- GoblinGardenGuards
 - Gold
 - Guess
 - HappyPrime
@@ -94,6 +95,7 @@ http://open.kattis.com/users/terrence-park
 - TextureAnalysis
 - TimeBomb
 - Tri
+- Tutorial
 - VisualGo
 - Volim
 - WalrusWeights
