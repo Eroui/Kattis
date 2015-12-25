@@ -5,13 +5,25 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class NumberTree {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		String[] line = io.nextLine().split(" ");
+		int height = Integer.parseInt(line[0]);
+		if (line.length != 1) {
+			String op = line[1];
+			long offset = 0;
+			for (char c : op.toCharArray()) {
+				if (c == 'L') {
+					offset = offset*2+1;
+				} else {
+					offset *= 2;
+				}
+			}
+			io.println(Math.round(Math.pow(2, height+1))-Math.round(Math.pow(2, op.length()+1)-2)+offset-1);
+		} else {
+			io.println(Math.round(Math.pow(2, height+1))-1);
 		}
 		
 		io.flush();
@@ -19,7 +31,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new NumberTree().go();
 	}
 	
 	private class Kattio extends PrintWriter {

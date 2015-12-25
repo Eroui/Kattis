@@ -5,13 +5,25 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Babelfish {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		HashMap<String, String> dict = new HashMap<>();
+		while (true) {
+			String[] words = io.nextLine().split(" ");
+			if (words[0].equals("")) {
+				break;
+			}
+			dict.put(words[1], words[0]);
+		}
+		while (io.hasNext()) {
+			String next = io.next();
+			if (dict.get(next) == null) {
+				io.println("eh");
+			} else {
+				io.println(dict.get(next));
+			}
 		}
 		
 		io.flush();
@@ -19,7 +31,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Babelfish().go();
 	}
 	
 	private class Kattio extends PrintWriter {
@@ -40,6 +52,10 @@ public class Template {
 
 	    public boolean hasNext() {
 	    	return peekToken() != null;
+	    }
+	    
+	    public boolean hasNextLine() {
+	    	return true;
 	    }
 
 	    public int nextInt() {

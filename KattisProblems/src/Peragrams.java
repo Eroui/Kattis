@@ -5,21 +5,29 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Peragrams {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		char[] word = io.next().toCharArray();
+		int[] freq = new int[26];
+		for (char c : word) {
+			freq[c-'a']++;
 		}
+		int numOdd = 0;
+		for (int i : freq) {
+			if (i % 2 != 0) {
+				numOdd++;
+			}
+		}
+		io.println(Math.max(numOdd-1, 0));
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Peragrams().go();
 	}
 	
 	private class Kattio extends PrintWriter {

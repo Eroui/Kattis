@@ -5,13 +5,39 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Erase {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int numPasses = io.nextInt();
+		char[] before = io.next().toCharArray();
+		char[] after = io.next().toCharArray();
+		if (numPasses % 2 == 0) {
+			boolean same = true;
+			for (int i = 0; i < before.length; i++) {
+				if (before[i] != after[i]) {
+					same = false;
+					break;
+				}
+			}
+			if (same) {
+				io.println("Deletion succeeded");
+			} else {
+				io.println("Deletion failed");
+			}
+		} else {
+			boolean same = true;
+			for (int i = 0; i < before.length; i++) {
+				if (before[i] == after[i]) {
+					same = false;
+					break;
+				}
+			}
+			if (same) {
+				io.println("Deletion succeeded");
+			} else {
+				io.println("Deletion failed");
+			}
 		}
 		
 		io.flush();
@@ -19,7 +45,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Erase().go();
 	}
 	
 	private class Kattio extends PrintWriter {
@@ -61,11 +87,8 @@ public class Template {
 	    public String nextLine() {
 	    	token = null;
 	    	st = null;
-	    	try {
-	    		return r.readLine();
-	    	} catch (IOException e) {
-	    		return null;
-	    	}
+	    	peekToken();
+	    	return line;
 	    }
 
 	    private String peekToken() {

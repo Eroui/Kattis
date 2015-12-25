@@ -5,13 +5,25 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class AnotherCandies {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
 		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		while (io.hasNext()) {
+			int numChildren = io.nextInt();
+			if (numChildren == 0) {
+				break;
+			}
+			long candies = 0;
+			for (int i = 0; i < numChildren; i++) {
+				candies = (candies + io.nextLong() % numChildren) % numChildren;
+			}
+			if (candies == 0) {
+				io.println("YES");
+			} else {
+				io.println("NO");
+			}
 		}
 		
 		io.flush();
@@ -19,7 +31,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new AnotherCandies().go();
 	}
 	
 	private class Kattio extends PrintWriter {

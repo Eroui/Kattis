@@ -5,21 +5,41 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Flexible {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int width = io.nextInt();
+		int numPartitions = io.nextInt();
+		int[] partitions = new int[numPartitions];
+		for (int i = 0; i < numPartitions; i++) {
+			partitions[i] = io.nextInt();
 		}
+		boolean[] possible = new boolean[width+1];
+		possible[width] = true;
+		for (int i = 0; i < numPartitions; i++) {
+			possible[partitions[i]] = true;
+			possible[width-partitions[i]] = true;
+		}
+		for (int i = 0; i < numPartitions; i++) {
+			for (int e = i+1; e < numPartitions; e++) {
+				possible[partitions[e] - partitions[i]] = true;
+			}
+		}
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < possible.length; i++) {
+			if (possible[i]) {
+				sb.append(i).append(" ");
+			}
+		}
+		io.println(sb.toString().trim());
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Flexible().go();
 	}
 	
 	private class Kattio extends PrintWriter {

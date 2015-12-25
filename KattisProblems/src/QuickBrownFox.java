@@ -5,13 +5,33 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class QuickBrownFox {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
 		int zz = io.nextInt();
 		for (int zzz = 0; zzz < zz; zzz++) {
-			
+			String line = io.nextLine();
+			boolean[] alpha = new boolean[26];
+			for (char c : line.toCharArray()) {
+				if (Character.isLetter(c)) {
+					alpha[Character.toLowerCase(c)-'a'] = true;
+				}
+			}
+			StringBuilder sb = new StringBuilder();
+			for (int i = 0; i < alpha.length; i++) {
+				if (!alpha[i]) {
+					if (sb.length() == 0) {
+						sb.append("missing ");
+					}
+					sb.append((char)(i+'a'));
+				}
+			}
+			if (sb.length() == 0) {
+				io.println("pangram");
+			} else {
+				io.println(sb);
+			}
 		}
 		
 		io.flush();
@@ -19,7 +39,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new QuickBrownFox().go();
 	}
 	
 	private class Kattio extends PrintWriter {
@@ -61,11 +81,8 @@ public class Template {
 	    public String nextLine() {
 	    	token = null;
 	    	st = null;
-	    	try {
-	    		return r.readLine();
-	    	} catch (IOException e) {
-	    		return null;
-	    	}
+	    	peekToken();
+	    	return line;
 	    }
 
 	    private String peekToken() {

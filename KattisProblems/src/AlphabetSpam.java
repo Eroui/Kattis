@@ -5,21 +5,37 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class AlphabetSpam {
 	
 	public void go() {
 		Kattio io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		char[] line = io.nextLine().toCharArray();
+		int whitespace = 0;
+		int lower = 0;
+		int upper = 0;
+		int symbols = 0;
+		for (char c : line) {
+			if (c == '_') {
+				whitespace++;
+			} else if (Character.isLowerCase(c)) {
+				lower++;
+			} else if (Character.isUpperCase(c)) {
+				upper++;
+			} else {
+				symbols++;
+			}
 		}
+		io.println((double)whitespace/line.length);
+		io.println((double)lower/line.length);
+		io.println((double)upper/line.length);
+		io.println((double)symbols/line.length);
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new AlphabetSpam().go();
 	}
 	
 	private class Kattio extends PrintWriter {
