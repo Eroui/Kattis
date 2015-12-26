@@ -7,24 +7,24 @@ import static java.lang.System.out;
 public class Pop {
 	
 	public void go() {
-		Scanner in = new Scanner(System.in);
-		while (in.hasNextInt()) {
-			int numBalloons = in.nextInt();
+		Kattio io = new Kattio(System.in);
+		while (io.hasNext()) {
+			int numBalloons = io.nextInt();
 			if (numBalloons == 0) {
 				break;
 			}
 			Balloon[] balloons = new Balloon[numBalloons];
 			for (int i = 0; i < numBalloons; i++) {
-				balloons[i] = new Balloon(in.nextDouble(), in.nextDouble(), in.nextDouble(), in.nextDouble());
+				balloons[i] = new Balloon(io.nextDouble(), io.nextDouble(), io.nextDouble(), io.nextDouble());
 			}
-			int numShots = in.nextInt();
+			int numShots = io.nextInt();
 			for (int zz = 0; zz < numShots; zz++) {
-				double x = in.nextDouble();
-				double y = in.nextDouble();
-				double z = in.nextDouble();
-				double vx = in.nextDouble();
-				double vy = in.nextDouble();
-				double vz = in.nextDouble();
+				double x = io.nextDouble();
+				double y = io.nextDouble();
+				double z = io.nextDouble();
+				double vx = io.nextDouble();
+				double vy = io.nextDouble();
+				double vz = io.nextDouble();
 				int score = 0;
 				for (int i = 0; i < balloons.length; i++) {
 					Balloon curr = balloons[i];
@@ -54,11 +54,12 @@ public class Pop {
 					}
 //					out.printf("%f %f %f%n", w2x, w2y, dist);
 				}
-				out.println(score);
+				io.println(score);
 			}
 		}
 		
-		in.close();
+		io.flush();
+		io.close();
 	}
 	
 	public double cross(double x1, double y1, double z1, double x2, double y2, double z2) {
@@ -89,5 +90,71 @@ public class Pop {
 			this.y = y;
 			z = l+r;
 		}
+	}
+	
+	private class Kattio extends PrintWriter {
+
+	    private BufferedReader r;
+	    private String line;
+	    private StringTokenizer st;
+	    private String token;
+		
+	    public Kattio(InputStream i) {
+			super(new BufferedOutputStream(System.out));
+			r = new BufferedReader(new InputStreamReader(i));
+	    }
+	    public Kattio(InputStream i, OutputStream o) {
+			super(new BufferedOutputStream(o));
+			r = new BufferedReader(new InputStreamReader(i));
+	    }
+
+	    public boolean hasNext() {
+	    	return peekToken() != null;
+	    }
+
+	    public int nextInt() {
+	    	return Integer.parseInt(nextToken());
+	    }
+
+	    public double nextDouble() { 
+	    	return Double.parseDouble(nextToken());
+	    }
+
+	    public long nextLong() {
+	    	return Long.parseLong(nextToken());
+	    }
+
+	    public String next() {
+	    	return nextToken();
+	    }
+	    
+	    public String nextLine() {
+	    	token = null;
+	    	st = null;
+	    	try {
+	    		return r.readLine();
+	    	} catch (IOException e) {
+	    		return null;
+	    	}
+	    }
+
+	    private String peekToken() {
+			if (token == null) 
+			    try {
+					while (st == null || !st.hasMoreTokens()) {
+					    line = r.readLine();
+					    if (line == null) return null;
+					    st = new StringTokenizer(line);
+					}
+					token = st.nextToken();
+			    } catch (IOException e) { }
+			return token;
+	    }
+
+	    private String nextToken() {
+			String ans = peekToken();
+			token = null;
+			return ans;
+	    }
 	}
 }
