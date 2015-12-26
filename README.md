@@ -19,6 +19,7 @@ http://open.kattis.com/users/terrence-park
 - Billiard
 - Bishops
 - BlackFriday
+- BusNumbers
 - BusySchedule
 - Carrots
 - Cats
@@ -49,6 +50,7 @@ http://open.kattis.com/users/terrence-park
 - FunctionalFun
 - GoblinGardenGuards
 - Gold
+- Goldbach2
 - Guess
 - HappyPrime
 - HayPoints
@@ -74,6 +76,7 @@ http://open.kattis.com/users/terrence-park
 - Oddities
 - OddManOut
 - Parking
+- Passengers
 - Peg
 - Peragrams
 - Pet
