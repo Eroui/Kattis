@@ -105,6 +105,7 @@ http://open.kattis.com/users/terrence-park
 - Template
 - TextureAnalysis
 - TimeBomb
+- Toilet
 - Tri
 - Tutorial
 - VisualGo
