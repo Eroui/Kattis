@@ -4,7 +4,6 @@ My solutions to Kattis problems I have solved.
 http://open.kattis.com/users/terrence-park
 
 #Solved Problems
-
 - 2048 (TwentyFortyEight)
 - 4Thought (FourThought)
 - Aaah
@@ -115,3 +114,9 @@ http://open.kattis.com/users/terrence-park
 - Volim
 - WalrusWeights
 - WhatDoesTheFoxSay
+
+#Unfinished
+- CatMouse
+- CookieSelection
+- CountCircuits
+- MusicCollection
