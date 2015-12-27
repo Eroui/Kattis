@@ -11,6 +11,7 @@ http://open.kattis.com/users/terrence-park
 - AlphabetSpam
 - AnotherCandies
 - Apaxiaaans
+- Artichoke
 - ASCIIFigureRotation
 - Babelfish
 - BachetsGame
@@ -51,6 +52,7 @@ http://open.kattis.com/users/terrence-park
 - Gold
 - Goldbach2
 - Guess
+- GuessTheDataStructure
 - HappyPrime
 - HayPoints
 - Height
@@ -120,3 +122,4 @@ http://open.kattis.com/users/terrence-park
 - CookieSelection
 - CountCircuits
 - MusicCollection
+- Ski
