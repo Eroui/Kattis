@@ -47,7 +47,7 @@ http://open.kattis.com/users/terrence-park
 - Flexible
 - Friday
 - FunctionalFun
-- GoblinGardenGuards
+- GoblinGardenGuards [C++ Solution]
 - Gold
 - Goldbach2
 - Guess
