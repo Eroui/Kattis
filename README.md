@@ -8,6 +8,7 @@ http://open.kattis.com/users/terrence-park
 - 4Thought (FourThought)
 - Aaah
 - ACM
+- ACM2
 - AlphabetSpam
 - AnotherCandies
 - Apaxiaaans
@@ -66,6 +67,7 @@ http://open.kattis.com/users/terrence-park
 - JustAMinute
 - Kemija08
 - KInARow
+- Kornislav
 - Ladder
 - Lexicography
 - LineUp
@@ -87,6 +89,7 @@ http://open.kattis.com/users/terrence-park
 - Pop
 - Queens
 - QuickBrownFox
+- RaggedRight
 - RationalArithmetic
 - ReverseBinary
 - ReverseRot
@@ -105,6 +108,7 @@ http://open.kattis.com/users/terrence-park
 - Subway
 - Subway2
 - SymmetricOrder
+- SynchronizingLists
 - T9Spelling
 - Template
 - TextureAnalysis
