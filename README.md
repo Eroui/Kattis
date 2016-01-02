@@ -25,9 +25,11 @@ http://open.kattis.com/users/terrence-park
 - Carrots
 - Cats
 - CD
+- Chopin
 - Classy
 - ClosingTheLoop
 - Cold
+- Communication
 - CompoundWords
 - Conundrum
 - CountingStars
@@ -59,6 +61,7 @@ http://open.kattis.com/users/terrence-park
 - Height
 - Heliocentric
 - Help2
+- Hidden
 - HittingTargets
 - Incognito
 - IncreasingSubsequence
@@ -98,6 +101,7 @@ http://open.kattis.com/users/terrence-park
 - SavingDaylight
 - SecretMessage
 - SelectGroup
+- Server
 - Simon
 - SimonSays
 - SmartPhone
