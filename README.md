@@ -74,6 +74,7 @@ http://open.kattis.com/users/terrence-park
 - Ladder
 - Lexicography
 - LineUp
+- Logo
 - MapTiles2
 - MixedFractions
 - NameThatPermutation
@@ -118,6 +119,7 @@ http://open.kattis.com/users/terrence-park
 - TextureAnalysis
 - TimeBomb
 - Toilet
+- TouchscreenKeyboard
 - Tri
 - Tutorial
 - VisualGo
