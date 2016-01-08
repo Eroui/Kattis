@@ -9,6 +9,7 @@ http://open.kattis.com/users/terrence-park
 - Aaah
 - ACM
 - ACM2
+- AlienNumbers
 - AlphabetSpam
 - AnotherCandies
 - Apaxiaaans
@@ -20,6 +21,7 @@ http://open.kattis.com/users/terrence-park
 - Billiard
 - Bishops
 - BlackFriday
+- BookingARoom
 - BusNumbers
 - BusySchedule
 - Carrots
@@ -31,6 +33,7 @@ http://open.kattis.com/users/terrence-park
 - Cold
 - Communication
 - CompoundWords
+- Compromise
 - Conundrum
 - CountingStars
 - DiceGame
@@ -76,7 +79,9 @@ http://open.kattis.com/users/terrence-park
 - LineUp
 - Logo
 - MapTiles2
+- MetaProgramming
 - MixedFractions
+- Mosquito
 - NameThatPermutation
 - NPuzzle
 - NumberTree
@@ -84,6 +89,7 @@ http://open.kattis.com/users/terrence-park
 - OddManOut
 - Parking
 - Passengers
+- PaulEigon
 - Peg
 - Peragrams
 - Pet
