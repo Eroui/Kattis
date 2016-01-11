@@ -13,6 +13,7 @@ http://open.kattis.com/users/terrence-park
 - AlphabetSpam
 - AnotherCandies
 - Apaxiaaans
+- ArmyStrengthEasy
 - Artichoke
 - ASCIIFigureRotation
 - Babelfish
@@ -22,6 +23,7 @@ http://open.kattis.com/users/terrence-park
 - Bishops
 - BlackFriday
 - BookingARoom
+- Bus
 - BusNumbers
 - BusySchedule
 - Carrots
@@ -31,6 +33,7 @@ http://open.kattis.com/users/terrence-park
 - Classy
 - ClosingTheLoop
 - Cold
+- Commercials
 - Communication
 - CompoundWords
 - Compromise
@@ -92,11 +95,14 @@ http://open.kattis.com/users/terrence-park
 - PaulEigon
 - Peg
 - Peragrams
+- PermutedArithmeticSequence
+- PervasiveHeartMonitor
 - Pet
 - PhoneList
 - Pivot
 - PlantingTrees
 - Pop
+- Prsteni
 - Queens
 - QuickBrownFox
 - RaggedRight
@@ -128,6 +134,7 @@ http://open.kattis.com/users/terrence-park
 - TouchscreenKeyboard
 - Tri
 - Tutorial
+- Vauvau
 - VisualGo
 - Volim
 - WalrusWeights
