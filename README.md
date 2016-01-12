@@ -23,6 +23,7 @@ http://open.kattis.com/users/terrence-park
 - Bishops
 - BlackFriday
 - BookingARoom
+- BoundingRobots
 - Bus
 - BusNumbers
 - BusySchedule
@@ -81,6 +82,7 @@ http://open.kattis.com/users/terrence-park
 - Lexicography
 - LineUp
 - Logo
+- Loowater
 - MapTiles2
 - MetaProgramming
 - MixedFractions
@@ -90,6 +92,7 @@ http://open.kattis.com/users/terrence-park
 - NumberTree
 - Oddities
 - OddManOut
+- Okvir
 - Parking
 - Passengers
 - PaulEigon
@@ -105,6 +108,7 @@ http://open.kattis.com/users/terrence-park
 - Prsteni
 - Queens
 - QuickBrownFox
+- QuiteAProblem
 - RaggedRight
 - RationalArithmetic
 - ReverseBinary
@@ -132,11 +136,13 @@ http://open.kattis.com/users/terrence-park
 - TimeBomb
 - Toilet
 - TouchscreenKeyboard
+- Towering
 - Tri
 - Tutorial
 - Vauvau
 - VisualGo
 - Volim
+- Vote
 - WalrusWeights
 - WhatDoesTheFoxSay
 
