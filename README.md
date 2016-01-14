@@ -14,6 +14,7 @@ http://open.kattis.com/users/terrence-park
 - AnotherCandies
 - Apaxiaaans
 - ArmyStrengthEasy
+- ArmyStrengthHard
 - Artichoke
 - ASCIIFigureRotation
 - Babelfish
@@ -96,6 +97,7 @@ http://open.kattis.com/users/terrence-park
 - Parking
 - Passengers
 - PaulEigon
+- PebbleSolitare
 - Peg
 - Peragrams
 - PermutedArithmeticSequence
@@ -144,6 +146,8 @@ http://open.kattis.com/users/terrence-park
 - Volim
 - Vote
 - WalrusWeights
+- WelcomeEasy
+- WelcomeHard
 - WhatDoesTheFoxSay
 
 #Unfinished
