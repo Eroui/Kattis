@@ -64,12 +64,14 @@ http://open.kattis.com/users/terrence-park
 - Goldbach2
 - Guess
 - GuessTheDataStructure
+- HalfACookie
 - HappyPrime
 - HayPoints
 - Height
 - Heliocentric
 - Help2
 - Hidden
+- HidingPlaces
 - HittingTargets
 - Incognito
 - IncreasingSubsequence
@@ -84,8 +86,11 @@ http://open.kattis.com/users/terrence-park
 - LineUp
 - Logo
 - Loowater
+- Mancala
 - MapTiles2
+- Measurement
 - MetaProgramming
+- Misa
 - MixedFractions
 - Mosquito
 - NameThatPermutation
@@ -105,6 +110,7 @@ http://open.kattis.com/users/terrence-park
 - Pet
 - PhoneList
 - Pivot
+- PizzaHawaii
 - PlantingTrees
 - Pop
 - Prsteni
