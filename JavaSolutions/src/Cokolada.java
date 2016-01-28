@@ -5,23 +5,30 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Cokolada {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int val = io.nextInt();
+		for (int i = 2; i <= val; i*=2) {
+			if (val % i != 0) {
+				String num = Integer.toString(val, 2);
+				io.printf("%d %d", (int)Math.pow(2, num.length()), num.lastIndexOf('1')-num.indexOf('1')+1);
+				io.flush();
+				io.close();
+				return;
+			}
 		}
+		io.printf("%d %d", val, 0);
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Cokolada().go();
 	}
 	
 	private class Kattio extends PrintWriter {

@@ -28,12 +28,15 @@ http://open.kattis.com/users/terrence-park
 - Bus
 - BusNumbers
 - BusySchedule
+- CantinaOfBabel
 - Carrots
 - Cats
 - CD
 - Chopin
 - Classy
 - ClosingTheLoop
+- Coast
+- Cokolada
 - Cold
 - Commercials
 - Communication
@@ -54,6 +57,7 @@ http://open.kattis.com/users/terrence-park
 - Erase
 - EstimatingTheAreaOfACircle
 - Everywhere
+- Excursion
 - FalseSecurity
 - FlowLayout
 - Flexible
@@ -143,6 +147,7 @@ http://open.kattis.com/users/terrence-park
 - TextureAnalysis
 - TimeBomb
 - Toilet
+- Torn2Pieces
 - TouchscreenKeyboard
 - Towering
 - Tri

@@ -5,23 +5,36 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Excursion {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		char[] line = io.nextLine().toCharArray();
+		int offset = 0;
+		long swaps = 0;
+		for (char c = '0'; c <= '2'; c++) {
+			int count = 0;
+			int greater = 0;
+			for (int i = 0; i < line.length; i++) {
+				if (line[i] == c) {
+					swaps += Math.max(0, greater);
+					count++;
+				} else if (line[i] > c) {
+					greater++;
+				}
+			}
+			offset += count;
 		}
+		io.println(swaps);
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Excursion().go();
 	}
 	
 	private class Kattio extends PrintWriter {

@@ -5,23 +5,92 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Torn2Pieces {
 	
-	Kattio io;
+	HashSet<Station> stations;
 	
 	public void go() {
-		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		Kattio io = new Kattio(System.in);
+		stations = new HashSet<>();
+		int numPieces = io.nextInt();
+		for (int i = 0; i < numPieces; i++) {
+			String[] line = io.nextLine().split(" ");
+			Station source = getStation(line[0]);
+			for (int e = 1; e < line.length; e++) {
+				source.add(getStation(line[e]));
+			}
+		}
+		Station source = getStation(io.next());
+		Station destination = getStation(io.next());
+		dijkstra(source, destination);
+		if (destination.prev == null) {
+			io.println("no route found");
+		} else {
+			io.println(print(destination));
 		}
 		
 		io.flush();
 		io.close();
 	}
 	
+	public void dijkstra(Station start, Station dest) {
+		LinkedList<Station> queue = new LinkedList<>();
+		queue.add(start);
+		while (!queue.isEmpty()) {
+			Station curr = queue.remove();
+			curr.visited = true;
+			for (Station s : curr.others) {
+				if (!s.visited) {
+					queue.add(s);
+					s.prev = curr;
+				}
+			}
+		}
+	}
+	
+	public String print(Station s) {
+		if (s.prev != null) {
+			return String.format("%s %s", print(s.prev), s);
+		} else {
+			return s.toString();
+		}
+	}
+	
+	public Station getStation(String n) {
+		for (Station s : stations) {
+			if (s.name.equals(n)) {
+				return s;
+			}
+		}
+		Station s = new Station(n);
+		stations.add(s);
+		return s;
+	}
+	
 	public static void main(String[] args) {
-		new Template().go();
+		new Torn2Pieces().go();
+	}
+	
+	private class Station {
+		
+		String name;
+		HashSet<Station> others;
+		Station prev;
+		boolean visited;
+		
+		public Station(String s) {
+			name = s;
+			others = new HashSet<>();
+		}
+		
+		public void add(Station s) {
+			others.add(s);
+			s.others.add(this);
+		}
+		
+		public String toString() {
+			return name;
+		}
 	}
 	
 	private class Kattio extends PrintWriter {
