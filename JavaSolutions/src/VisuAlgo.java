@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.regex.*;
 import static java.lang.System.out;
 
-public class VisualGo {
+public class VisuAlgo {
 	
 	public void go() {
 		Scanner in = new Scanner(System.in);
@@ -50,7 +50,7 @@ public class VisualGo {
 	}
 	
 	public static void main(String[] args) {
-		new VisualGo().go();
+		new VisuAlgo().go();
 	}
 
 	private class Vertex implements Comparable<Vertex> {
