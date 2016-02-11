@@ -24,6 +24,7 @@ http://open.kattis.com/users/terrence-park
 - Beavergnaw
 - Billiard
 - Bishops
+- BitByBit
 - BlackFriday
 - BookingARoom
 - BoundingRobots
@@ -35,6 +36,7 @@ http://open.kattis.com/users/terrence-park
 - Cats
 - CD
 - ChartingProgress
+- Chess
 - Chopin
 - Classy
 - ClosingTheLoop
@@ -51,6 +53,7 @@ http://open.kattis.com/users/terrence-park
 - Different
 - Dominant
 - Doorman
+- Downtime
 - Dungeon
 - DVDs
 - Easiest
@@ -69,6 +72,8 @@ http://open.kattis.com/users/terrence-park
 - GoblinGardenGuards [C++ Solution]
 - Gold
 - Goldbach2
+- GolombRulers
+- GrowlingGears
 - Guess
 - GuessTheDataStructure
 - HalfACookie
@@ -80,8 +85,10 @@ http://open.kattis.com/users/terrence-park
 - Hidden
 - HidingPlaces
 - HittingTargets
+- ImageDecoding
 - Incognito
 - IncreasingSubsequence
+- Jabuke
 - Jackpot
 - Judging
 - JustAMinute
@@ -112,6 +119,9 @@ http://open.kattis.com/users/terrence-park
 - OddManOut
 - Okvir
 - Parking
+- Parking2
+- ParsingHex
+- PathTracing
 - Passengers
 - PaulEigon
 - PebbleSolitare
@@ -133,12 +143,15 @@ http://open.kattis.com/users/terrence-park
 - QuiteAProblem
 - RaggedRight
 - RationalArithmetic
+- Recipes
 - ReverseBinary
 - ReverseRot
 - Rijeci
 - RockPaperScissors
+- RollCall
 - SavingDaylight
 - SecretMessage
+- SecureDoors
 - SelectGroup
 - Server
 - Simon
@@ -155,7 +168,7 @@ http://open.kattis.com/users/terrence-park
 - SymmetricOrder
 - SynchronizingLists
 - T9Spelling
-- Template
+- Tajna
 - TextureAnalysis
 - TimeBomb
 - Toilet
@@ -164,6 +177,7 @@ http://open.kattis.com/users/terrence-park
 - TourDeFrance
 - Towering
 - Tri
+- Trilemma
 - Tutorial
 - Vacuumba
 - Vauvau
@@ -175,6 +189,7 @@ http://open.kattis.com/users/terrence-park
 - WeakVertices
 - WelcomeEasy
 - WelcomeHard
+- WERTYU
 - WhatDoesTheFoxSay
 
 #Unfinished
@@ -182,4 +197,6 @@ http://open.kattis.com/users/terrence-park
 - CookieSelection
 - CountCircuits
 - MusicCollection
+- Rafting
 - Ski
+- UxuhulVoting
