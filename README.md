@@ -60,11 +60,13 @@ http://open.kattis.com/users/terrence-park
 - EightQueens
 - Eligibility
 - EncodedMessage
+- EngineeringEnglish
 - Erase
 - EstimatingTheAreaOfACircle
 - Everywhere
 - Excursion
 - FalseSecurity
+- Fire2
 - FlowLayout
 - Flexible
 - Friday
@@ -85,6 +87,7 @@ http://open.kattis.com/users/terrence-park
 - Hidden
 - HidingPlaces
 - HittingTargets
+- iBoard
 - ImageDecoding
 - Incognito
 - IncreasingSubsequence
@@ -159,6 +162,7 @@ http://open.kattis.com/users/terrence-park
 - SmartPhone
 - SnapperEasy
 - SnapperHard
+- Snowflakes
 - SortOfSorting
 - Spavanac
 - SpeedLimit
@@ -170,6 +174,7 @@ http://open.kattis.com/users/terrence-park
 - T9Spelling
 - Tajna
 - TextureAnalysis
+- TheBackslashProblem
 - TimeBomb
 - Toilet
 - Torn2Pieces
@@ -194,6 +199,7 @@ http://open.kattis.com/users/terrence-park
 
 #Unfinished
 - CatMouse
+- ChopWood
 - CookieSelection
 - CountCircuits
 - MusicCollection
