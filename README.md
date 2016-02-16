@@ -20,6 +20,7 @@ http://open.kattis.com/users/terrence-park
 - ASCIIFigureRotation
 - Babelfish
 - BachetsGame
+- BaconEggsAndSpam
 - BeatSpread
 - Beavergnaw
 - Billiard
@@ -71,6 +72,7 @@ http://open.kattis.com/users/terrence-park
 - Flexible
 - Friday
 - FunctionalFun
+- FunHouse
 - GoblinGardenGuards [C++ Solution]
 - Gold
 - Goldbach2
@@ -94,6 +96,7 @@ http://open.kattis.com/users/terrence-park
 - Jabuke
 - Jackpot
 - Judging
+- JuryJeopardy
 - JustAMinute
 - Kemija08
 - KInARow
@@ -157,6 +160,7 @@ http://open.kattis.com/users/terrence-park
 - SecureDoors
 - SelectGroup
 - Server
+- ShortestPath1
 - Simon
 - SimonSays
 - SmartPhone
@@ -190,6 +194,7 @@ http://open.kattis.com/users/terrence-park
 - VisuAlgo
 - Volim
 - Vote
+- Walkway
 - WalrusWeights
 - WeakVertices
 - WelcomeEasy
