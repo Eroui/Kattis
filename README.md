@@ -52,6 +52,7 @@ http://open.kattis.com/users/terrence-park
 - CountingStars
 - DiceGame
 - Different
+- DifferentDistances
 - Dominant
 - Doorman
 - Downtime
@@ -89,10 +90,12 @@ http://open.kattis.com/users/terrence-park
 - Hidden
 - HidingPlaces
 - HittingTargets
+- HumanCannonball
 - iBoard
 - ImageDecoding
 - Incognito
 - IncreasingSubsequence
+- IntegerLists
 - Jabuke
 - Jackpot
 - Judging
@@ -102,7 +105,9 @@ http://open.kattis.com/users/terrence-park
 - KInARow
 - Kolone
 - Kornislav
+- Kratki
 - Ladder
+- LawnMower
 - Lexicography
 - LineUp
 - Logo
@@ -115,6 +120,7 @@ http://open.kattis.com/users/terrence-park
 - MinimumScalar
 - Misa
 - MixedFractions
+- MoneyMatters
 - Mosquito
 - MusicYourWay
 - NameThatPermutation
@@ -144,9 +150,11 @@ http://open.kattis.com/users/terrence-park
 - PolyMul1
 - Pop
 - Prsteni
+- Pubs
 - Queens
 - QuickBrownFox
 - QuiteAProblem
+- RaceDay
 - RaggedRight
 - RationalArithmetic
 - Recipes
@@ -155,7 +163,9 @@ http://open.kattis.com/users/terrence-park
 - Rijeci
 - RockPaperScissors
 - RollCall
+- RunningMoM
 - SavingDaylight
+- SavingUniverse
 - SecretMessage
 - SecureDoors
 - SelectGroup
@@ -177,8 +187,10 @@ http://open.kattis.com/users/terrence-park
 - SynchronizingLists
 - T9Spelling
 - Tajna
+- TextEncryption
 - TextureAnalysis
 - TheBackslashProblem
+- ThinkingOfANumber
 - TimeBomb
 - Toilet
 - Torn2Pieces
@@ -188,6 +200,7 @@ http://open.kattis.com/users/terrence-park
 - Tri
 - Trilemma
 - Tutorial
+- UnionFind
 - Vacuumba
 - Vauvau
 - Veci
@@ -201,6 +214,7 @@ http://open.kattis.com/users/terrence-park
 - WelcomeHard
 - WERTYU
 - WhatDoesTheFoxSay
+- WordsForNumbers
 
 #Unfinished
 - CatMouse
@@ -209,5 +223,6 @@ http://open.kattis.com/users/terrence-park
 - CountCircuits
 - MusicCollection
 - Rafting
+- Satisfiability
 - Ski
 - UxuhulVoting
