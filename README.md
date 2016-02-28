@@ -29,6 +29,7 @@ http://open.kattis.com/users/terrence-park
 - BlackFriday
 - BookingARoom
 - BoundingRobots
+- BreakingBad
 - Bus
 - BusNumbers
 - BusySchedule
@@ -115,6 +116,7 @@ http://open.kattis.com/users/terrence-park
 - Mancala
 - MapTiles2
 - Matrix
+- MazeMakers
 - Measurement
 - MetaProgramming
 - MinimumScalar
@@ -171,6 +173,7 @@ http://open.kattis.com/users/terrence-park
 - SelectGroup
 - Server
 - ShortestPath1
+- SidewaysSorting
 - Simon
 - SimonSays
 - SmartPhone
@@ -183,6 +186,7 @@ http://open.kattis.com/users/terrence-park
 - Statistics
 - Subway
 - Subway2
+- SumOfTheOthers
 - SymmetricOrder
 - SynchronizingLists
 - T9Spelling
