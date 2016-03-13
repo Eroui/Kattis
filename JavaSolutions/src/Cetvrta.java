@@ -5,30 +5,41 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Cetvrta {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int x1 = io.nextInt();
+		int y1 = io.nextInt();
+		int x2 = io.nextInt();
+		int y2 = io.nextInt();
+		int x3 = io.nextInt();
+		int y3 = io.nextInt();
+		int x4, y4;
+		if (x1 == x2) {
+			x4 = x3;
+		} else if (x1 == x3) {
+			x4 = x2;
+		} else {
+			x4 = x1;
 		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
-				break;
-			}
-			
+		if (y1 == y2) {
+			y4 = y3;
+		} else if (y1 == y3) {
+			y4 = y2;
+		} else {
+			y4 = y1;
 		}
+		io.printf("%d %d", x4, y4);
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Cetvrta().go();
 	}
 	
 	private class Kattio extends PrintWriter {

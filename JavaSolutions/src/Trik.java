@@ -5,30 +5,35 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Trik {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
-		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
+		char[] input = io.nextLine().trim().toCharArray();
+		int loc = 4;
+		for (char c : input) {
+			switch (c) {
+			case 'A':
+				loc ^= loc != 1 ? 6 : 0;
+				break;
+			case 'B':
+				loc ^= loc != 4 ? 3 : 0;
+				break;
+			case 'C':
+				loc ^= loc != 2 ? 5 : 0;
 				break;
 			}
-			
 		}
+		io.print(3-loc/2);
 		
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Trik().go();
 	}
 	
 	private class Kattio extends PrintWriter {

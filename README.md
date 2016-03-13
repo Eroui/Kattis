@@ -37,6 +37,7 @@ http://open.kattis.com/users/terrence-park
 - Carrots
 - Cats
 - CD
+- Cetvrta
 - ChartingProgress
 - Chess
 - Chopin
@@ -65,6 +66,7 @@ http://open.kattis.com/users/terrence-park
 - EncodedMessage
 - EngineeringEnglish
 - Erase
+- EscapePlan
 - EstimatingTheAreaOfACircle
 - Everywhere
 - Excursion
@@ -102,6 +104,7 @@ http://open.kattis.com/users/terrence-park
 - Judging
 - JuryJeopardy
 - JustAMinute
+- Karte
 - Kemija08
 - KInARow
 - Kolone
@@ -202,6 +205,7 @@ http://open.kattis.com/users/terrence-park
 - TourDeFrance
 - Towering
 - Tri
+- Trik
 - Trilemma
 - Tutorial
 - UnionFind

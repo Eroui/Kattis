@@ -5,30 +5,53 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Karte {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
-		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
+		String line = io.nextLine();
+		boolean[][] deck = new boolean[4][13];
+		int[] taken = new int[4];
+		boolean duplicate = false;
+		while (!line.isEmpty()) {
+			char cSuit = line.charAt(0);
+			int val = Integer.parseInt(line.substring(1,3))-1;
+			line = line.substring(3);
+			int suit = 0;
+			switch (cSuit) {
+			case 'P':
+				suit = 0;
+				break;
+			case 'K':
+				suit = 1;
+				break;
+			case 'H':
+				suit = 2;
+				break;
+			case 'T':
+				suit = 3;
 				break;
 			}
-			
+			taken[suit]++;
+			if (deck[suit][val]) {
+				duplicate = true;
+				break;
+			}
+			deck[suit][val] = true;
 		}
-		
+		if (duplicate) {
+			io.print("GRESKA");
+		} else {
+			io.printf("%d %d %d %d", 13-taken[0], 13-taken[1], 13-taken[2], 13-taken[3]);
+		}
 		io.flush();
 		io.close();
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Karte().go();
 	}
 	
 	private class Kattio extends PrintWriter {
