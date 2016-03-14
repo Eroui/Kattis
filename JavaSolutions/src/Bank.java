@@ -19,14 +19,14 @@ public class Bank {
 			people[i][0] = io.nextInt();
 			people[i][1] = io.nextInt();
 		}
-//		Arrays.sort(people, new Comparator<int[]>() {
-//			public int compare(int[] one, int[] two) {
-//				if (one[1] == two[1]) {
-//					return two[0] - one[0];
-//				}
-//				return one[1] - two[1];
-//			}
-//		});
+		Arrays.sort(people, new Comparator<int[]>() {
+			public int compare(int[] one, int[] two) {
+				if (one[1] == two[1]) {
+					return two[0] - one[0];
+				}
+				return one[1] - two[1];
+			}
+		});
 		for (int i = 0; i < numPeople; i++) {
 			int minIndex = -1;
 			int minMoney = Integer.MAX_VALUE;
