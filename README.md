@@ -21,6 +21,7 @@ http://open.kattis.com/users/terrence-park
 - Babelfish
 - BachetsGame
 - BaconEggsAndSpam
+- Bank
 - BeatSpread
 - Beavergnaw
 - Billiard
@@ -28,6 +29,7 @@ http://open.kattis.com/users/terrence-park
 - BitByBit
 - BlackFriday
 - BookingARoom
+- BottledUp
 - BoundingRobots
 - BreakingBad
 - Bus
@@ -63,6 +65,7 @@ http://open.kattis.com/users/terrence-park
 - Easiest
 - EightQueens
 - Eligibility
+- Emergency
 - EncodedMessage
 - EngineeringEnglish
 - Erase
@@ -71,8 +74,10 @@ http://open.kattis.com/users/terrence-park
 - Everywhere
 - Excursion
 - FalseSecurity
+- FerryLoading4
 - Fire2
 - FlowLayout
+- FlyingSafely
 - Flexible
 - Friday
 - FunctionalFun
@@ -154,6 +159,7 @@ http://open.kattis.com/users/terrence-park
 - PlantingTrees
 - PolyMul1
 - Pop
+- PrintingCosts
 - Prsteni
 - Pubs
 - Queens
@@ -223,6 +229,7 @@ http://open.kattis.com/users/terrence-park
 - WERTYU
 - WhatDoesTheFoxSay
 - WordsForNumbers
+- Zanzibar
 
 #Unfinished
 - CatMouse
