@@ -6,6 +6,7 @@ http://open.kattis.com/users/terrence-park
 #Solved Problems
 - 2048 (TwentyFortyEight)
 - 4Thought (FourThought)
+- A1Paper
 - Aaah
 - ACM
 - ACM2
@@ -25,6 +26,7 @@ http://open.kattis.com/users/terrence-park
 - Bank
 - BeatSpread
 - Beavergnaw
+- BestCompression
 - Billiard
 - Bishops
 - BitByBit
@@ -43,6 +45,7 @@ http://open.kattis.com/users/terrence-park
 - Cetvrta
 - ChartingProgress
 - Chess
+- Chewbacca
 - Chopin
 - Classy
 - ClosingTheLoop
@@ -56,6 +59,7 @@ http://open.kattis.com/users/terrence-park
 - Conundrum
 - CountingStars
 - CurseTheDarkness
+- Deathstar
 - DetailedDifferences
 - DiceGame
 - Different
@@ -76,6 +80,7 @@ http://open.kattis.com/users/terrence-park
 - Erase
 - ErdosNumbers
 - EscapePlan
+- Esej
 - EstimatingTheAreaOfACircle
 - Everywhere
 - Excursion
@@ -89,6 +94,7 @@ http://open.kattis.com/users/terrence-park
 - Friday
 - FunctionalFun
 - FunHouse
+- GetToWork
 - GoblinGardenGuards [C++ Solution]
 - Gold
 - Goldbach2
@@ -97,11 +103,14 @@ http://open.kattis.com/users/terrence-park
 - Guess
 - GuessTheDataStructure
 - HalfACookie
+- Han
 - HappyPrime
 - HayPoints
 - Height
 - Heliocentric
+- Hello
 - Help2
+- Herman
 - Hidden
 - HidingPlaces
 - HittingTargets
@@ -126,6 +135,7 @@ http://open.kattis.com/users/terrence-park
 - LawnMower
 - Lexicography
 - LineUp
+- ListGame
 - Logo
 - Loowater
 - Mancala
@@ -168,8 +178,10 @@ http://open.kattis.com/users/terrence-park
 - PlantingTrees
 - PolyMul1
 - Pop
+- Pot
 - PrintingCosts
 - Prsteni
+- Ptice
 - Pubs
 - Queens
 - QuickBrownFox
@@ -219,6 +231,7 @@ http://open.kattis.com/users/terrence-park
 - TouchscreenKeyboard
 - TourDeFrance
 - Towering
+- TrainPassengers
 - Tri
 - Trik
 - Trilemma
@@ -239,9 +252,11 @@ http://open.kattis.com/users/terrence-park
 - WERTYU
 - WhatDoesTheFoxSay
 - WordsForNumbers
+- Yoda
 - Zanzibar
 
 #Unfinished
+- BuildDeps
 - CatMouse
 - ChopWood
 - CookieSelection
