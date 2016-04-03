@@ -99,6 +99,7 @@ http://open.kattis.com/users/terrence-park
 - Gold
 - Goldbach2
 - GolombRulers
+- Grille
 - GrowlingGears
 - Guess
 - GuessTheDataStructure
@@ -196,6 +197,7 @@ http://open.kattis.com/users/terrence-park
 - RockPaperScissors
 - RollCall
 - RunningMoM
+- Satisfiability
 - SavingDaylight
 - SavingUniverse
 - SecretMessage
@@ -261,8 +263,10 @@ http://open.kattis.com/users/terrence-park
 - ChopWood
 - CookieSelection
 - CountCircuits
+- Fibonacci
+- Infiltration2
 - MusicCollection
 - Rafting
-- Satisfiability
 - Ski
+- Stacking
 - UxuhulVoting

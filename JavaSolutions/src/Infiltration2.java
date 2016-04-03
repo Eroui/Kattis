@@ -5,66 +5,78 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Satisfiability {
+public class Infiltration2 {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			int numVars = io.nextInt();
-			int numClauses = io.nextInt();
-			int[] clauses = new int[numClauses];
-			boolean[] autoTrue = new boolean[numClauses];
-			int[] mask = new int[numClauses];
-			for (int i = 0; i < numClauses; i++) {
-				String[] split = io.nextLine().split(" ");
-				int clause = 0;
-				int tUsed = 0;
-				int fUsed = 0;
-				for (String s : split) {
-					if (s.charAt(0) != 'v') {
-						int bit;
-						int bitmask;
-						if (s.charAt(0) == '~') {
-							bit = Integer.parseInt(s.substring(2))-1;
-							bitmask = (int)Math.pow(2, bit);
-							fUsed |= bitmask;
-							clause |= bitmask;
-						} else {
-							bit = Integer.parseInt(s.substring(1))-1;
-							bitmask = (int)Math.pow(2, bit);
-							tUsed |= bitmask;
-						}
-						mask[i] |= bitmask;
-					}
-				}
-				clauses[i] = clause;
-				if ((tUsed & fUsed) != 0) {
-					autoTrue[i] = true;
-				}
+		int currCase = 1;
+		while (true) {
+			String next = io.next();
+			if (next == null || next.equals("end")) {
+				break;
 			}
-			boolean works = true;
-			for (int i = (int)Math.pow(2, numVars)-1; i >= 0; i--) {
-				works = true;
-				for (int e = 0; e < numClauses; e++) {
-					if (autoTrue[e]) {
-						continue;
+			int numCells = Integer.parseInt(next);
+			boolean[][] mat = new boolean[numCells][numCells];
+			boolean[] used = new boolean[numCells];
+			int[] count = new int[numCells];
+			for (int i = 0; i < numCells; i++) {
+				char[] line = io.nextLine().toCharArray();
+				for (int e = 0; e < numCells; e++) {
+					if (line[e] == '1') {
+						mat[i][e] = true;
+						count[i]++;
 					}
-					if (((i ^ clauses[e]) & mask[e]) == 0) {
-						works = false;
+				}
+				mat[i][i] = true;
+				count[i]++;
+			}
+			int numFilled = 0;
+			int numInfiltrated = 0;
+			boolean[] currCaptured = new boolean[numCells];
+			while (numFilled < numCells) {
+				int nextCheck = 0;
+				for (; nextCheck < numCells; nextCheck++) {
+					if (!currCaptured[nextCheck]) {
 						break;
 					}
 				}
-				if (works) {
-					io.println("satisfiable");
-					break;
+				int maxIndex = -1;
+				for (int i = 0; i < numCells; i++) {
+					if (mat[i][nextCheck] && (maxIndex == -1 || count[i] > count[maxIndex])) {
+						maxIndex = i;
+					}
+				}
+				numFilled += count[maxIndex];
+				numInfiltrated++;
+				used[maxIndex] = true;
+				boolean[] inverse = new boolean[numCells];
+				for (int i = 0; i < numCells; i++) {
+					inverse[i] = !mat[maxIndex][i];
+					currCaptured[i] |= mat[maxIndex][i];
+				}
+				for (int i = 0; i < numCells; i++) {
+					if (used[i]) {
+						continue;
+					}
+					int c = 0;
+					for (int e = 0; e < numCells; e++) {
+						mat[i][e] &= inverse[e];
+						if (mat[i][e]) {
+							c++;
+						}
+					}
+					count[i] = c;
 				}
 			}
-			if (!works) {
-				io.println("unsatisfiable");
+			io.printf("Case %d: %d", currCase++, numInfiltrated);
+			for (int i = 0; i < numCells; i++) {
+				if (used[i]) {
+					io.printf(" %d", i+1);
+				}
 			}
+			io.println();
 		}
 		
 		io.flush();
@@ -72,7 +84,7 @@ public class Satisfiability {
 	}
 	
 	public static void main(String[] args) {
-		new Satisfiability().go();
+		new Infiltration2().go();
 	}
 	
 	private class Kattio extends PrintWriter {
