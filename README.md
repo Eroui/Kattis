@@ -24,6 +24,7 @@ http://open.kattis.com/users/terrence-park
 - BachetsGame
 - BaconEggsAndSpam
 - Bank
+- BasicInterpreter
 - BeatSpread
 - Beavergnaw
 - BestCompression
@@ -81,6 +82,7 @@ http://open.kattis.com/users/terrence-park
 - ErdosNumbers
 - EscapePlan
 - Esej
+- Estate
 - EstimatingTheAreaOfACircle
 - Everywhere
 - Excursion
@@ -208,6 +210,7 @@ http://open.kattis.com/users/terrence-park
 - SidewaysSorting
 - Simon
 - SimonSays
+- SlidingTiles
 - SmartPhone
 - SnapperEasy
 - SnapperHard
@@ -258,6 +261,7 @@ http://open.kattis.com/users/terrence-park
 - Zanzibar
 
 #Unfinished
+- Banjo
 - BuildDeps
 - CatMouse
 - ChopWood
@@ -269,4 +273,5 @@ http://open.kattis.com/users/terrence-park
 - Rafting
 - Ski
 - Stacking
+- TwoKnights
 - UxuhulVoting
