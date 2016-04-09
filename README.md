@@ -32,6 +32,7 @@ http://open.kattis.com/users/terrence-park
 - Bishops
 - BitByBit
 - BlackFriday
+- BlockCrusher
 - BookingARoom
 - BottledUp
 - BoundingRobots
@@ -39,12 +40,14 @@ http://open.kattis.com/users/terrence-park
 - Bus
 - BusNumbers
 - BusySchedule
+- Cake
 - CantinaOfBabel
 - Carrots
 - Cats
 - CD
 - Cetvrta
 - ChartingProgress
+- ChemistsVows
 - Chess
 - Chewbacca
 - Chopin
@@ -61,6 +64,7 @@ http://open.kattis.com/users/terrence-park
 - CountingStars
 - CurseTheDarkness
 - Deathstar
+- Debugging
 - DetailedDifferences
 - DiceGame
 - Different
@@ -179,6 +183,7 @@ http://open.kattis.com/users/terrence-park
 - Pivot
 - PizzaHawaii
 - PlantingTrees
+- Playground
 - PolyMul1
 - Pop
 - Pot
@@ -222,6 +227,7 @@ http://open.kattis.com/users/terrence-park
 - Subway
 - Subway2
 - SumOfTheOthers
+- SurveillanceSquared
 - SymmetricOrder
 - SynchronizingLists
 - T9Spelling
@@ -269,6 +275,7 @@ http://open.kattis.com/users/terrence-park
 - CountCircuits
 - Fibonacci
 - Infiltration2
+- KitchenCombinatorics
 - MusicCollection
 - Rafting
 - Ski
