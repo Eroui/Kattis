@@ -5,22 +5,40 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Multigram {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
-		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
+		String word = io.next();
+		int i;
+		for (i = word.length(); i > 1; i--) {
+			if (word.length() % i != 0) {
+				continue;
+			}
+			int[] freq = new int[26];
+			int[] prevFreq = freq;
+			boolean works = true;
+			for (int e = 0; e < i; e++) {
+				freq = new int[26];
+				for (int w = 0; w < word.length()/i; w++) {
+					freq[word.charAt(w+e*word.length()/i)-'a']++;
+				}
+				if (e != 0 && !Arrays.equals(prevFreq, freq)) {
+					works = false;
+					break;
+				}
+				prevFreq = freq;
+			}
+			if (works) {
 				break;
 			}
-            
+		}
+		if (i == 1) {
+			io.println(-1);
+		} else {
+			io.println(word.substring(0,word.length()/i));
 		}
 		
 		io.flush();
@@ -28,7 +46,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Multigram().go();
 	}
 	
 	private class Kattio extends PrintWriter {

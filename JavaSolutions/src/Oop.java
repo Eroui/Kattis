@@ -5,22 +5,30 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Oop {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int numWords = io.nextInt();
+		int numPatterns = io.nextInt();
+		String[] words = new String[numWords];
+		for (int i = 0; i < numWords; i++) {
+			words[i] = io.next();
 		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
-				break;
+		for (int i = 0; i < numPatterns; i++) {
+			int sum = 0;
+			String pattern = io.next();
+			int star = pattern.indexOf('*');
+			String start = pattern.substring(0, star);
+			String end = pattern.substring(star+1);
+			for (String w : words) {
+				if (w.startsWith(start) && w.endsWith(end) && start.length()+end.length() <= w.length()) {
+					sum++;
+				}
 			}
-            
+			io.println(sum);
 		}
 		
 		io.flush();
@@ -28,7 +36,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Oop().go();
 	}
 	
 	private class Kattio extends PrintWriter {

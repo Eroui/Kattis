@@ -5,22 +5,38 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class CheckingForCorrectness {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
-		}
 		while (true) {
 			String next = io.next();
 			if (next == null || next.equals("end")) {
 				break;
 			}
-            
+			long one = Long.parseLong(next)%10000;
+			char symbol = io.next().charAt(0);
+			long two = io.nextLong();
+			switch (symbol) {
+			case '+':
+				io.println((one+two)%10000);
+				break;
+			case '*':
+				io.println((one*two)%10000);
+				break;
+			case '^':
+				long ans = 1;
+				while (two > 0) {
+					if (two % 2 == 1) {
+						ans = (ans * one) % 10000;
+					}
+					one = (one * one) % 10000;
+					two /= 2;
+				}
+				io.println(ans);
+			}
 		}
 		
 		io.flush();
@@ -28,7 +44,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new CheckingForCorrectness().go();
 	}
 	
 	private class Kattio extends PrintWriter {

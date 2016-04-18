@@ -5,22 +5,29 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Skener {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
+		int numRows = io.nextInt();
+		int numCols = io.nextInt();
+		int rowMult = io.nextInt();
+		int colMult = io.nextInt();
+		char[][] mat = new char[numRows][];
+		for (int i = 0; i < numRows; i++) {
+			mat[i] = io.next().toCharArray();
 		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
-				break;
+		for (int r = 0; r < numRows; r++) {
+			for (int i = 0; i < rowMult; i++) {
+				for (int c = 0; c < numCols; c++) {
+					for (int e = 0; e < colMult; e++) {
+						io.print(mat[r][c]);
+					}
+				}
+				io.println();
 			}
-            
 		}
 		
 		io.flush();
@@ -28,7 +35,7 @@ public class Template {
 	}
 	
 	public static void main(String[] args) {
-		new Template().go();
+		new Skener().go();
 	}
 	
 	private class Kattio extends PrintWriter {

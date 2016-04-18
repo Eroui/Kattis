@@ -29,6 +29,7 @@ http://open.kattis.com/users/terrence-park
 - Beavergnaw
 - BestCompression
 - Billiard
+- Bing
 - Bishops
 - BitByBit
 - BlackFriday
@@ -47,6 +48,7 @@ http://open.kattis.com/users/terrence-park
 - CD
 - Cetvrta
 - ChartingProgress
+- CheckingForCorrectness
 - ChemistsVows
 - Chess
 - Chewbacca
@@ -158,7 +160,9 @@ http://open.kattis.com/users/terrence-park
 - Modulo
 - MoneyMatters
 - Mosquito
+- Multigram
 - MusicYourWay
+- Names
 - NameThatPermutation
 - NotAmused
 - NPuzzle
@@ -175,12 +179,14 @@ http://open.kattis.com/users/terrence-park
 - PebbleSolitare
 - Peg
 - Peragrams
+- Perica
 - Perket
 - PermutedArithmeticSequence
 - PervasiveHeartMonitor
 - Pet
 - PhoneList
 - Pivot
+- Pizza2
 - PizzaHawaii
 - PlantingTrees
 - Playground
@@ -215,6 +221,7 @@ http://open.kattis.com/users/terrence-park
 - SidewaysSorting
 - Simon
 - SimonSays
+- Skener
 - SlidingTiles
 - SmartPhone
 - SnapperEasy
@@ -223,6 +230,7 @@ http://open.kattis.com/users/terrence-park
 - SortOfSorting
 - Spavanac
 - SpeedLimit
+- Squawk
 - Statistics
 - Subway
 - Subway2
@@ -232,6 +240,7 @@ http://open.kattis.com/users/terrence-park
 - SynchronizingLists
 - T9Spelling
 - Tajna
+- Temperature
 - TextEncryption
 - TextureAnalysis
 - TheBackslashProblem
@@ -264,12 +273,13 @@ http://open.kattis.com/users/terrence-park
 - WhatDoesTheFoxSay
 - WordsForNumbers
 - Yoda
+- Zamka
 - Zanzibar
 
 #Unfinished
+- Artur
 - Banjo
 - BuildDeps
-- CatMouse
 - ChopWood
 - CookieSelection
 - CountCircuits
@@ -277,7 +287,9 @@ http://open.kattis.com/users/terrence-park
 - Infiltration2
 - KitchenCombinatorics
 - MusicCollection
+- Oop
 - Rafting
+- RobertHood
 - Ski
 - Stacking
 - TwoKnights

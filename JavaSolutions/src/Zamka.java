@@ -5,30 +5,43 @@ import java.math.*;
 
 import static java.lang.System.out;
 
-public class Template {
+public class Zamka {
 	
 	Kattio io;
 	
 	public void go() {
 		io = new Kattio(System.in);
-		int zz = io.nextInt();
-		for (int zzz = 0; zzz < zz; zzz++) {
-			
-		}
-		while (true) {
-			String next = io.next();
-			if (next == null || next.equals("end")) {
+		int min = io.nextInt();
+		int max = io.nextInt();
+		int target = io.nextInt();
+		for (int i = min; i <= max; i++) {
+			if (getSum(i) == target) {
+				io.println(i);
 				break;
 			}
-            
+		}
+		for (int i = max; i >= min; i--) {
+			if (getSum(i) == target) {
+				io.println(i);
+				break;
+			}
 		}
 		
 		io.flush();
 		io.close();
 	}
 	
+	public int getSum(int i) {
+		int sum = 0;
+		while (i > 0) {
+			sum += i%10;
+			i /= 10;
+		}
+		return sum;
+	}
+	
 	public static void main(String[] args) {
-		new Template().go();
+		new Zamka().go();
 	}
 	
 	private class Kattio extends PrintWriter {
