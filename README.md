@@ -4,6 +4,7 @@ My solutions to Kattis problems I have solved.
 http://open.kattis.com/users/terrence-park
 
 #Solved Problems
+- 10KindsOfPeople (TenKindsOfPeople)
 - 2048 (TwentyFortyEight)
 - 4Thought (FourThought)
 - A1Paper
@@ -22,12 +23,15 @@ http://open.kattis.com/users/terrence-park
 - ASCIIFigureRotation
 - Babelfish
 - BachetsGame
+- Backspace
 - BaconEggsAndSpam
 - Bank
 - BasicInterpreter
 - BeatSpread
 - Beavergnaw
+- Bela
 - BestCompression
+- Bijele
 - Billiard
 - Bing
 - Bishops
@@ -197,6 +201,7 @@ http://open.kattis.com/users/terrence-park
 - Prsteni
 - Ptice
 - Pubs
+- Putovanje
 - Queens
 - QuickBrownFox
 - QuiteAProblem
@@ -221,6 +226,7 @@ http://open.kattis.com/users/terrence-park
 - SidewaysSorting
 - Simon
 - SimonSays
+- SimpleAddition
 - Skener
 - SlidingTiles
 - SmartPhone
@@ -271,6 +277,7 @@ http://open.kattis.com/users/terrence-park
 - WelcomeHard
 - WERTYU
 - WhatDoesTheFoxSay
+- WheresMyInternet
 - WordsForNumbers
 - Yoda
 - Zamka
